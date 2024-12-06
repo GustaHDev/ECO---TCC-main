@@ -1,0 +1,425 @@
+@font-face {
+    font-family: "passeroOne";
+    src: url('../fontes/PasseroOne-Regular.woff') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "passionOne";
+    src: url('../fontes/PassionOne-Regular.woff') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+html {
+    background-color: #252525;
+    margin: 0;
+    font: 16px "Lato", sans-serif;
+    color: #000;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #324E41;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+header,
+nav ul {
+    color: #C6D5D0;
+    padding: 1rem;
+    font-family: passionOne;
+    font-size: 30px;
+    margin: 0px;
+    margin-right: 50px;
+    list-style-type: none;
+    text-align: right;
+}
+
+ul li {
+    padding: 5px;
+}
+
+.logo button,
+.logo img {
+    position: absolute;
+    left: .3em;
+    top: .5em;
+    width: 5em;
+    height: 2em;
+}
+
+
+ul .tab-btn,
+#login {
+    padding: 10px;
+    border: none;
+    text-align: center;
+    color: #C6D5D0;
+    font-size: 32px;
+    cursor: pointer;
+    font-family: passionOne;
+    border-radius: 8px;
+    background-color: #324E41;
+    transition: background-color .3s ease;
+}
+
+
+.tab-btn.forum.active,
+.tab-btn.howTo.active,
+.tab-btn.about.active,
+.tab-btn.contact.active {
+    background-color: #B0D2C7;
+    color: #20322A;
+}
+
+#login:hover,
+.tab-btn.forum:hover,
+.tab-btn.howTo:hover,
+.tab-btn.about:hover,
+.tab-btn.contact:hover {
+    background-color: #C6D5D0;
+    color: #324E41;
+}
+
+/*
+começo parallax
+*/
+
+.parallax {
+    z-index: 0;
+    position: relative;
+    height: 720px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#image-1 {
+    background-image: url(../imagens/prints/print-inicio.png);
+}
+
+#image-2 {
+    background-image: url(../imagens/prints/print-game-1.png);
+}
+
+#image-3 {
+    background-image: url(../imagens/prints/video-game-1.gif);
+}
+
+.content-title {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+}
+
+.content-title span.title {
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #111;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+.conteudo {
+    text-align: center;
+    padding: 50px 80px;
+    font-family: 'PassionOne';
+    font-size: 32px;
+    color: #324E41;
+}
+
+.conteudo a {
+    text-decoration: none;
+    color: #B0D2C7;
+}
+
+/* 
+fim parallax
+*/
+
+/*
+começo modal login
+*/
+
+
+.content.fade {
+    opacity: .5;
+    overflow: hidden;
+}
+
+#modal {
+    transition: .5s;
+    opacity: 1;
+    pointer-events: all;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+    width: 500px;
+    max-width: 90%;
+    border-radius: .5rem;
+    color: #fff;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 490px;
+    margin-bottom: 1rem;
+    padding-left: 10px;
+    background-color: #20322A;
+    border-radius: .5rem .5rem 0px 0px;
+}
+
+#close-modal {
+    margin-top: -20px;
+    margin-right: 20px;
+    border: none;
+    background-color: #20322A;
+    color: #fff;
+    cursor: pointer;
+}
+
+#close-modal:hover {
+    transition: ease-in .1s;
+    border: 1px solid #fff;
+    background-color: #252525;
+    color: #fff;
+    cursor: pointer;
+}
+
+.modal-body {
+    margin-bottom: 1rem;
+    margin: 10px;
+}
+
+.input-box {
+    padding: 5px;
+    font-size: 25px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 25px;
+}
+
+.continue-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    margin: 10px 0px
+}
+
+.continue-button button {
+    height: 100%;
+    background-color: #324E41;
+    color: #B0D2C7;
+    font-size: 35px;
+    font-family: 'passionOne';
+    width: 150px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.continue-button button:hover {
+    transition: .3s;
+    background-color: #20322A;
+    color: #C6D5D0;
+}
+
+.link-cadastro {
+    text-align: center;
+}
+
+.link-cadastro a {
+    text-decoration: none;
+    color: #B0D2C7;
+}
+
+/*
+esconder modal
+*/
+
+
+#modal.hide {
+    top: 0;
+    opacity: 0;
+}
+
+/*
+fim esconder modal
+*/
+
+/*
+form
+*/
+
+form {
+    display: block;
+}
+
+.form-label {
+    width: 100%;
+    font-size: 16px;
+}
+
+
+
+/*
+fim form
+*/
+
+/*
+fim modal login
+*/
+
+.content {
+    display: none;
+}
+
+.content.show {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+#login form {
+    border: 1px solid #ccc;
+    top: 20%;
+}
+
+/* .content p {
+    text-align: center;
+    font-family: passionOne;
+    font-size: 60px;
+    color: #C6D5D0;
+
+} */
+
+
+#texto h1 {
+    font-family: passeroOne;
+    font-size: 305px;
+    color: #C6D5D0;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: #324E41;
+    margin-block: 0px;
+    margin: -100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    letter-spacing: -17px;
+
+}
+
+.container img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+nav ul li {
+    display: inline-block;
+
+}
+
+/* começo fórum */
+
+
+.forum-content {
+    position: relative;
+    width: 50%;
+    max-width: 880px;
+    height: 100%;
+    top: 15em;
+    left: 25em;
+    max-height: 880px;
+}
+
+.newPost {
+    background-color: #324E41;
+    color: #B0D2C7;
+    font-size: 35px;
+    font-family: 'passionOne';
+    width: 150px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.newPost:hover {
+    transition: .3s;
+    background-color: #20322A;
+    color: #C6D5D0;
+}
+
+/* fim fórum */
+
+.userName{
+    font-size: 32px;
+    color: #C6D5D0;
+    font-family: passionOne;
+}
+
+.userPicture{
+margin-bottom: -15px;
+padding: 0;
+max-height: 80px;
+max-width: 80px;
+border-radius: 25%;
+border: 2px solid #B0D2C7;
+}
+
+#postTitle{
+    margin: 0;
+    margin-left: 5px;
+    font-family: passeroOne;
+    font-size: 48px;
+    color: #20322A;
+}
+
+#postContent{
+    margin: 5px;
+    font-family: passionOne;
+    font-size: 16px;
+    color: #252525;
+}
+
+.rodape{
+    background-color: #324E41;
+    text-align: center;
+    width: 100%;
+    height: 32px;
+    padding: 5px;
+    position: absolute;
+    top: 100%;
+}
+
+.rodape a{
+    font-size: 28px;
+    font-family: passionOne;
+    color: #B0D2C7;
+    text-decoration: none;
+}
+
+.tab-content{
+    margin-bottom: 0px;
+}

@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "passionOne";
+    src: url('../fontes/PassionOne-Regular.woff') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+html {
+    background-color: #252525;
+    margin: 0;
+    font: 16px "Lato", sans-serif;
+    color: #fff;
+    height: 100%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.voltar{
+    position: absolute;
+    left: .3em;
+    top: .5em;
+    width: 5em;
+    height: 2em;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    color: #C6D5D0;
+    font-size: 32px;
+    cursor: pointer;
+    font-family: passionOne;
+    border-radius: 8px;
+    background-color: #324E41;
+    transition: background-color .3s ease;
+}
+
+.voltar:hover{
+    background-color: #C6D5D0;
+    color: #324E41;
+}
