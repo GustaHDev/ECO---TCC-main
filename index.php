@@ -50,7 +50,7 @@
       <div class="conteudo">
         <p>
           Adentre agora mesmo neste mundo de aventuras em busca da restauração do planeta!
-          <a href="">Clique aqui para baixar!</a>
+          <a href="https://junglebr.itch.io/eco">Clique aqui para jogar!</a>
         </p>
       </div>
       <div class="parallax" id="image-2">
@@ -58,12 +58,12 @@
       <div class="conteudo">
         <p>
           Os Ecos da Terra te esperam! Resolva enigmas e os ajude a transformar o mundo!
-          <a href="">Baixe agora e comece a jogar!</a>
+          <a href="https://junglebr.itch.io/eco">Clique aqui e comece a jogar!</a>
         </p>
       </div>
       <div class="parallax" id="image-3">
         <div class="content-title">
-          <span class="title">Baixe agora mesmo!</span>
+          <a href="https://junglebr.itch.io/eco"><span class="title">Jogue agora mesmo!</span></a>
         </div>
       </div>
     </div>
